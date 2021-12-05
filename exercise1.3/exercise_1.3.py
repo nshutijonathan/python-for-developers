@@ -12,7 +12,7 @@ def take_recipe():
     for(ingredient) in recipe['ingredients']:
         if ingredient not in ingredients_list:
             ingredients_list.append(ingredient)
-    recipes_list.append(recipe.copy())
+    recipes_list.append(recipe)
     for(rec) in recipes_list:
         if rec['cooking_time'] < 10 and len(rec['ingredients']) < 2:
             difficulty = ''
